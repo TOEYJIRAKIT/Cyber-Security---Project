@@ -13,52 +13,35 @@
 ![Screenshot 2024-04-07 203718 (1)](https://github.com/TOEYJIRAKIT/Cyber-Security---Project/assets/110581279/365b39c2-5159-465c-8559-b9995c4f1ebe)
 ## Ping of Death Command
 <code>sudo hping3 --icmp --flood --spoof <spoofed_ip> <target_ip></code>
-#### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
-#### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID sensor เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
-
-แสดงสถาปัตยกรรมซอฟต์แวร์ (Software Architecture)
-![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/27c4a44d-e4de-4dcf-af2b-b90ca1ab6e14)
-
-#### Collect Layer 
-- Arduino UNO Wifi ใช้ในการรับค่าข้อมูลจาก RFID sensor เพื่อส่งไปให้ NodeMCU 1.0
-- NodeMCU 1.0 ใช้สำหรับในการรับค่าจาก Arduino UNO Wifi และนำส่งข้อมูลที่ได้ไปยัง MQTT
-#### Process Layer 
-- MQTT ใช้รับข้อมูลจาก NodeMCU 1.0 และส่งข้อมูล ไปยัง Flask
-- Flask ใช้รับข้อมูลจาก JSON และส่งไปแสดงผลใน Web
-- JSON ใช้เป็น database ที่ใช้ในการเก็บข้อมูลนักศึกษาที่เข้า-ออก
-#### Frontend Layer 
-- Web แสดงผลผ่านเว็บไซต์ข้อมูลนักศึกษาที่เข้า-ออกจาก Flask ที่ส่งมา
-- LINE Notify ส่งแจ้งเตือนข้อมูลนักศึกษาที่เข้า-ออกไปยังไลน์ผู้ปกครอง
-- OLED Display แสดงผลข้อมูลนักศึกษาที่เข้า-ออกผ่านหน้าจอว่า SUCCESS หรือไม่ถ้าเป็นนักศึกษาที่ไม่รู้จักจะแสดง UNKNOWN
-
-### Data Stucture
-โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ uid , studentid , firstname , lastname , position , timestamp , status, id ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
-#### โครงสร้างข้อมูล :
+## โครงสร้างข้อมูล
 ```json
-{
-  "users": [
     {
-      "uid": "2",
-      "studentid": "64125735",
-      "firstname": "ธนวัฒน์",
-      "lastname": "กองสีสังข์",
-      "position": "นักศึกษา",
-      "timestamp": "20:15:40",
-      "status": "เข้า",
-      "id": 1
-    },
-    {
-      "uid": "3",
-      "studentid": "64102080",
-      "firstname": "จิรกิตติ์",
-      "lastname": "เอียดเหตุ",
-      "position": "นักศึกษา",
-      "timestamp": "20:15:43",
-      "status": "ออก",
-      "id": 2
+        "input_interface": "wlp2s0",
+        "code": "0",
+        "dst": "172.28.1.60",
+        "attack_type": "Ping of Death",
+        "src": "172.28.1.63",
+        "type": "8",
+        "ttl": "64",
+        "tags": [],
+        "hostname": "itd-Macmini8",
+        "@timestamp": "2024-04-07T11:42:54.570Z",
+        "len": "28",
+        "prec": "0x00",
+        "port": 35324,
+        "proto": "ICMP",
+        "@version": "1",
+        "host": "172.18.0.1",
+        "mac_dst": "dc:a4:ca:e9:a6:db",
+        "mac_src": "70:9c:d1:84:a0:df",
+        "tos": "0x00",
+        "id": [
+            "3608",
+            "25180"
+        ],
+        "seq": "512",
+        "timestamp": "Apr  7 18:42:54"
     }
-  ]
-}
 ```
 ### Data Dictionary
 | Attribute | Description | Data Type | Example |
