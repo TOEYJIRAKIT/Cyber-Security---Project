@@ -1,5 +1,5 @@
 # ระบบติดตามการโจมตีรูปแบบ Ping of Death
-## Link to youtube
+## Link to Youtube
 [ระบบแจ้งเตือนการเข้า-ออกโรงเรียน (Attendance System)](https://youtu.be/BAh69DkOwuc?si=MIl8_Ys98mKSaYL-)
 ## สมาชิกในกลุ่ม
 - 64102122 จิรภัทร จิตรภักดี
