@@ -10,7 +10,8 @@
 - 64110455 ภัครศักดิ์ ผลสนอง 
 ## หน้าเว็บไซต์การแสดงผลกราฟ
 กราฟการติดตามการโจมตีรูปแบบ Ping of Death
-![image](![image](https://github.com/TOEYJIRAKIT/Cyber-Security---Project/assets/110581279/528b46c2-d8e6-42ee-9ff5-75cd9744c567))
+![image](https://github.com/TOEYJIRAKIT/Cyber-Security---Project/assets/110581279/5a35ed7c-8a10-43d3-ba07-d0e0dbd7fe64)
+
 
 #### Collect Layer ทำหน้าที่รับข้อมูลจาก RFID sensor เพื่อใช้ประมวลผล
 #### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
