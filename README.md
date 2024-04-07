@@ -10,10 +10,11 @@
 - 64110455 ภัครศักดิ์ ผลสนอง 
 ## หน้าเว็บไซต์การแสดงผลกราฟ
 กราฟการติดตามการโจมตีรูปแบบ Ping of Death
-![image](https://github.com/TOEYJIRAKIT/Cyber-Security---Project/assets/110581279/5a35ed7c-8a10-43d3-ba07-d0e0dbd7fe64)
-
-
-#### Collect Layer ทำหน้าที่รับข้อมูลจาก RFID sensor เพื่อใช้ประมวลผล
+![Screenshot 2024-04-07 203718 (1)](https://github.com/TOEYJIRAKIT/Cyber-Security---Project/assets/110581279/365b39c2-5159-465c-8559-b9995c4f1ebe)
+## Ping of Death Command
+<p align="center">
+    <code>sudo hping3 --icmp --flood --spoof <spoofed_ip> <target_ip></code>
+</p>
 #### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
 #### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID sensor เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
 
