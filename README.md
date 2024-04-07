@@ -12,9 +12,7 @@
 กราฟการติดตามการโจมตีรูปแบบ Ping of Death
 ![Screenshot 2024-04-07 203718 (1)](https://github.com/TOEYJIRAKIT/Cyber-Security---Project/assets/110581279/365b39c2-5159-465c-8559-b9995c4f1ebe)
 ## Ping of Death Command
-<p align="center">
-    <code>sudo hping3 --icmp --flood --spoof <spoofed_ip> <target_ip></code>
-</p>
+<code>sudo hping3 --icmp --flood --spoof <spoofed_ip> <target_ip></code>
 #### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
 #### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID sensor เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
 
