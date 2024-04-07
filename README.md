@@ -40,5 +40,5 @@
     "timestamp": "Apr  7 18:42:54"
 }
 ```
-## ตัวอย่างการทำงาน
+## ตัวอย่างผลการทำงาน
 ![Screenshot 2024-04-07 204434 (1)](https://github.com/TOEYJIRAKIT/Cyber-Security---Project/assets/110581279/a0723a82-7174-45d8-adfa-f165d89999e5)
