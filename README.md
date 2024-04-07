@@ -1,7 +1,7 @@
 # ระบบติดตามการโจมตีรูปแบบ Ping of Death
 ## Link to Youtube
-- [Checkpoint การตรวจจับการโจมตีแบบ Ping of Death](https://youtu.be/BAh69DkOwuc?si=MIl8_Ys98mKSaYL-) 
-- [กราฟแสดงผลการตรวจจับการโจมตีแบบ Ping of Death](https://youtu.be/BAh69DkOwuc?si=MIl8_Ys98mKSaYL-)
+- [Checkpoint การตรวจจับการโจมตีแบบ Ping of Death](youtube.com) 
+- [กราฟแสดงผลการตรวจจับการโจมตีแบบ Ping of Death](youtube.com)
 ## สมาชิกในกลุ่ม
 - 64102122 จิรภัทร จิตรภักดี
 - 64102080 จิรกิตติ์ เอียดเหตุ 
