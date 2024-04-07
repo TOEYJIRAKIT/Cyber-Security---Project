@@ -1,4 +1,4 @@
-# ระบบการติดตามการโจมตีรูปแบบ Ping of Death
+# ระบบติดตามการโจมตีรูปแบบ Ping of Death
 ## Link to youtube
 [ระบบแจ้งเตือนการเข้า-ออกโรงเรียน (Attendance System)](https://youtu.be/BAh69DkOwuc?si=MIl8_Ys98mKSaYL-)
 ## สมาชิกในกลุ่ม
@@ -9,7 +9,7 @@
 - 64125735 ธนวัฒน์ กองสีสังข์
 - 64110455 ภัครศักดิ์ ผลสนอง 
 ## หน้าเว็บไซต์การแสดงผลกราฟ
-กราฟการติดตามการโจมตีรูปแบบ Ping of Death
+กราฟติดตามการโจมตีรูปแบบ Ping of Death
 ![Screenshot 2024-04-07 203718 (1)](https://github.com/TOEYJIRAKIT/Cyber-Security---Project/assets/110581279/365b39c2-5159-465c-8559-b9995c4f1ebe)
 ## Ping of Death Command
 <code>sudo hping3 --icmp --flood --spoof <spoofed_ip> <target_ip></code>
